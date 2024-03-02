@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+body {
+  background-color: #2d2d31;
+  color: #f9f9fb;
+}
+h1 {
+  font-size: 3rem;
+  padding: 1rem 0 0 1rem;
+}
+.between-play-again {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.between {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+.play-again {
+  width: 15rem;
+  height: 4rem;
+  margin-right: 2rem;
+  background-color: black;
+  color: #f9f9fb;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+}
+.play-again:hover {
+  background-color: gainsboro;
+  color: black;
+}
+hr {
+  margin-top: 5rem;
+  height: 0.5rem;
+  background-color: black;
+  border: none;
+}
+.original-number {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  top: 11rem;
+  left: 38rem;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.guessed-number {
+  display: block;
+  width: 10rem;
+  height: 5rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f9f9fb;
+  border: 0.3rem solid black;
+  outline: none;
+}
+.check-btn {
+  width: 8rem;
+  height: 3rem;
+  margin: 2rem 0 0 1rem;
+  background-color: black;
+  color: #f9f9fb;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.check-btn:hover {
+  background-color: gainsboro;
+  color: black;
+}
+.right {
+  font-size: 2rem;
+}
+.message {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    padding: 2rem 0 0 2.5rem;
+  }
+  .between-play-again {
+    display: block;
+  }
+  .between {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+  .play-again {
+    position: absolute;
+    top: 50rem;
+    left: 5.5rem;
+  }
+  hr {
+    margin-top: 7rem;
+  }
+  .original-number {
+    top: 13rem;
+    left: 8.5rem;
+  }
+  main {
+    display: block;
+  }
+  .left {
+    margin-left: 7.5rem;
+    margin-top: 6rem;
+  }
+  .right {
+    margin-left: 4rem;
+    margin-top: 2rem;
+  }
+  .message {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    padding: 3rem 0 0 13rem;
+  }
+  .between-play-again {
+    display: block;
+  }
+  .between {
+    font-size: 2.5rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+  }
+  .play-again {
+    position: absolute;
+    top: 50rem;
+    left: 16rem;
+  }
+  hr {
+    margin-top: 8rem;
+  }
+  .original-number {
+    top: 16rem;
+    left: 20rem;
+  }
+  main {
+    margin-top: 10rem;
+  }
+}
