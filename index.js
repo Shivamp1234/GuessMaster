@@ -35,6 +35,10 @@ document.querySelector(".check-btn").addEventListener("click", function () {
         document.querySelector(".original-number").style.width = "15rem";
         document.querySelector(".original-number").style.left = "34rem";
         document.querySelector(".original-number").style.fontSize = "7rem";
+        let media = window.matchMedia("(max-width: 600px)");
+        if (media.matches) {
+            document.querySelector(".original-number").style.left = "5.5rem";
+        }
         if (score > highScore) {
             highScore = score;
             document.querySelector(".high-score").textContent = highScore;
@@ -54,4 +58,10 @@ document.querySelector(".play-again").addEventListener("click", function () {
     document.querySelector(".original-number").style.width = "8rem";
     document.querySelector(".original-number").style.left = "38rem";
     document.querySelector(".original-number").style.fontSize = "5rem";
+    let media = window.matchMedia("(max-width: 600px)");
+    if (media.matches) {
+        document.querySelector(".original-number").style.left = "8.5rem";
+        document.querySelector(".play-again").style.backgroundColor = "black";
+        document.querySelector(".play-again").style.color = "#f9f9fb";
+    }
 })
